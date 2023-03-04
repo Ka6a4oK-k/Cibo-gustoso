@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./style/remove.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Cibo gustoso</title>
@@ -13,11 +16,17 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__items">
-                    <div class="header__items__burger"></div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <nav class="header__nav">
                         <ul class="header__nav__links">
-                            <li class="header__nav__link">Menu</li>
-                            <li class="header__nav__link">Team</li>
+                            <li class="header__nav__link">
+                                <a href="#">Menu</a>
+                            </li>
+                            <li class="header__nav__link">
+                                <a href="">Team</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -25,8 +34,12 @@
                 <div class="header__items">
                     <nav class="header__nav">
                         <ul class="header__nav__links">
-                            <li class="header__nav__link">Events</li>
-                            <li class="header__nav__link">Contact</li>
+                            <li class="header__nav__link">
+                                <a href="">Events</a>
+                            </li>
+                            <li class="header__nav__link">
+                                <a href="">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="header__items__lang">EN</div>
@@ -51,14 +64,108 @@
                 </div>
             </div>
             <div class="about__slider">
+                <div class="swiper about__swiper">
+                    <div class="container">
+                        <div class="about__swiper__buttons">
+                            <div class="about__swiper-button-prev swiper-button swiper-button-prev">
+                                <img src="./imgs/slider-arrow.svg" alt="">
+                            </div>
+                            <div class="about__swiper-button-next swiper-button swiper-button-next">
+                                <img src="./imgs/slider-arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about/about-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="menu">
             <div class="container">
-                <h2 class="menu__header">Menu</h2>
-                <p class="menu__text">Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id nulla. Risus convallis iaculis risus ac aliquam sit ultricies. Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor egestas nam congue elit dolor.</p>
-                <div class="menu__dishes-slider"></div>
-                <div class="menu__drinks-slider"></div>
+                <div class="menu__inner">
+                    <h2 class="menu__header">Menu</h2>
+                    <p class="menu__text">Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id nulla. Risus
+                        convallis iaculis risus ac aliquam sit ultricies. Adipiscing adipiscing pellentesque tincidunt vitae.
+                        Aliquam dolor egestas nam congue elit dolor.
+                    </p>
+                    <!-- <div class="menu__dishes-slider">
+                        <div class="menu__dishes__swiper-button-prev swiper-button-prev swiper-button menu__dishes__swiper-button">
+                            <img src="./imgs/slider-arrow.svg" alt="">
+                        </div>
+                        <div class="swiper menu__dishes__swiper">
+                            <div class="swiper-wrapper menu__dishes__swiper-wrapper">
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide menu__dishes__swiper-slide">
+                                    <img src="./imgs/menu/dishes/Menu-dish-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__dishes__swiper-button-next swiper-button-next swiper-button menu__dishes__swiper-button">
+                            <img src="./imgs/slider-arrow.svg" alt="">
+                        </div>
+                    </div> -->
+                    <div class="menu__dishes-slider">
+                        <div class="menu__dishes__swiper">
+                            <div class="menu__dishes__swiper-pagination"></div>
+                            <div class="menu__dishes__swiper-wrapper swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__drinks-slider">
+                        <div class="menu__drinks__swiper">
+                            <div class="menu__drinks__swiper-wrapper swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                            </div>
+                            <div class="menu__drinks__swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="team">
@@ -70,6 +177,26 @@
                         consequat luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.</p>
                 </div>
                 <div class="team__slider">
+                    <div class="team__swiper swiper">
+                        <div class="team__swiper__buttons">
+                            <div class="team__swiper-button-prev swiper-button-prev swiper-button">
+                                <img src="./imgs/slider-arrow.svg" alt="">
+                            </div>
+                            <div class="team__swiper-button-next swiper-button-next swiper-button">
+                                <img src="./imgs/slider-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper team__swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,10 +204,22 @@
             <div class="container">
                 <h2 class="events__header">Events</h2>
                 <div class="events__items">
-                    <div class="event_item"></div>
-                    <div class="event_item"></div>
-                    <div class="event_item"></div>
-                    <div class="event_item"></div>
+                    <div class="events__item">
+                        <img src="./imgs/events/Event-photo.png" alt="">
+                        <div class="events__item__hover">Corporate Events</div>
+                    </div>
+                    <div class="events__item">
+                        <img src="./imgs/events/Event-photo.png" alt="">
+                        <div class="events__item__hover">Wedding Parties</div>
+                    </div>
+                    <div class="events__item">
+                        <img src="./imgs/events/Event-photo.png" alt="">
+                        <div class="events__item__hover">Corporate Events</div>
+                    </div>
+                    <div class="events__item">
+                        <img src="./imgs/events/Event-photo.png" alt="">
+                        <div class="events__item__hover">Birthday Parties</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,7 +227,22 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__main">
-                <nav class="footer__nav"></nav>
+                <nav class="footer__nav">
+                    <ul class="footer__nav__links">
+                        <li class="footer__nav__link">
+                            <a href="">Menu</a>
+                        </li>
+                        <li class="footer__nav__link">
+                            <a href="">Team</a>
+                        </li>
+                        <li class="footer__nav__link">
+                            <a href="">Events</a>
+                        </li>
+                        <li class="footer__nav__link">
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
                 <a href="/" class="footer__logo">Cibo gustoso</a>
                 <form action="" class="footer__form">
                     <span class="footer__form__title">Sign up to our newsletter</span>
@@ -98,20 +252,23 @@
             <div class="footer__socials">
                 <ul class="footer__socials__links">
                     <li class="footer__socials__link">
-                        <a href=""></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li class="footer__socials__link">
-                        <a href=""></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li class="footer__socials__link">
-                        <a href=""></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li class="footer__socials__link">
-                        <a href=""></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="./scripts/about-slider.js"></script>
+    <script src="./scripts/menu-sliders.js"></script>
+    <script src="./scripts/team-slider.js"></script>
 </body>
 </html>
