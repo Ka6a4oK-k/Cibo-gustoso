@@ -257,10 +257,10 @@ section {
     text-align: center;
 }
 .team__slider {
-    /* width: 100%; */
+    width: 100%;
 }
 .team__swiper {
-    max-width: 1920px;
+    max-width: calc(100% - 128px);
     display: flex;
     flex-direction: column;
 }
@@ -270,8 +270,22 @@ section {
     margin-bottom: 40px;
 }
 .team__swiper-wrapper {
-    width: calc(100% - 128px);
     align-self: center;
+}
+.team__swiper__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.125rem;
+}
+.team__swiper__card__position {
+    font-weight: 600;
+}
+.team__swiper__card__name {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 /* events */
 .events {
