@@ -1,5 +1,6 @@
 const dishesList = ["Appetizers", 'Pasta', 'Pizza', 'Salads', 'Soups', 'Desserts']
 const drinksList = ['Wine', 'Cocktails', 'Beer']
+
 const swiperMenuDishes = new Swiper('.menu__dishes__swiper', {
     effect: "fade",
     allowTouchMove: false,
@@ -13,6 +14,8 @@ const swiperMenuDishes = new Swiper('.menu__dishes__swiper', {
     }
 });
 
+
+
 const swiperMenuDrinks = new Swiper('.menu__drinks__swiper', {
     effect: "fade",
     allowTouchMove: false,
@@ -23,5 +26,24 @@ const swiperMenuDrinks = new Swiper('.menu__drinks__swiper', {
         renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (drinksList[index]) + "</span>";
         }
+    }
+});
+
+const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
+    // loop: true,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.menu__dishes__type__swiper-button-next',
+        prevEl: '.menu__dishes__type__swiper-button-prev',
+    }
+});
+
+const swiperMenuDrinkType = new Swiper('.menu__drinks__type__swiper', {
+    effect: "fade",
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.menu__drinks__type__swiper-button-next',
+        prevEl: '.menu__drinks__type__swiper-button-prev',
     }
 });
