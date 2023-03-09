@@ -1,11 +1,25 @@
 @font-face {
-    font-family: Roboto;
+    font-family: 'Roboto';
     src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Elsie';
+    src: url(../fonts/Elsie/Elsie-Black.ttf);
+}
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url(../fonts/ClashDisplay/fonts/ClashDisplay-Bold.ttf);
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     font-family: Roboto;
     background-color: rgba(207, 210, 198, 1);
     color: rgba(54, 57, 45, 1);
+}
+a {
+    color: inherit;
 }
 section {
     padding-top: 80px;
@@ -19,11 +33,23 @@ section {
 .swiper {
     overflow: hidden;
 }
+.swiper-wrapper {
+    margin-inline: -1;
+}
 /* header */
 
 .header {
-    position: static;
+    z-index: 10;
+    color: rgba(207, 210, 198, 1);
+    width: 100%;
+    top: 0;
+    position: fixed;
     font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .header__wrapper {
     display: flex;
@@ -76,6 +102,7 @@ section {
     gap: 40px;
 }
 .header__logo {
+    font-family: Elsie;
     font-size: 2rem;
 }
 /* hero */
@@ -92,19 +119,18 @@ section {
     padding-top: 0;
 }
 .hero__text {
+    font-family: ClashDisplay;
     color: rgba(207, 210, 198, 1);
     line-height: 6rem;
     font-size: 5rem;
 }
 /* about */
-.about {
-    /* padding-top: 80px; */
-}
 .about__content {
     display: flex;
     justify-content: space-between;
 }
 .about__header {
+    font-family: ClashDisplay;
     font-size: 4rem;
 }
 .about__text {
@@ -152,6 +178,7 @@ section {
     align-items: center;
 }
 .menu__header {
+    font-family: ClashDisplay;
     font-size: 4rem;
     margin-bottom: 24px;
 }
@@ -210,6 +237,7 @@ section {
     gap: 16px;
 }
 .menu__dishes__type__swiper-slide__card__name {
+    font-family: ClashDisplay;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -225,6 +253,7 @@ section {
     width: calc(100% - 298px);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 80px;
 }
 .menu__drinks__swiper {
@@ -233,14 +262,11 @@ section {
     align-items: center;
     width: 50%;
 }
-.menu__drinks__swiper-wrapper {
-    /* width: 50%; */
-    /* z-index: -1; */
-}
 .menu__drinks__swiper-slide {
     display: flex;
 }
 .menu__drinks__swiper-pagination {
+    font-family: ClashDisplay;
     display: flex;
     flex-direction: column;
     width: 570px !important;
@@ -261,9 +287,6 @@ section {
 .menu__drinks__type__swiper {
     display: flex;
 }
-.menu__drinks__type__swiper-wrapper {
-    
-}
 .menu__drinks__type__swiper-buttons {
     display: flex;
     flex-direction: column;
@@ -279,6 +302,7 @@ section {
     gap: 16px;
 }
 .menu__drinks__type__swiper-slide__card__name {
+    font-family: ClashDisplay;
     font-size: 20px;
     font-weight: 700;
 }
@@ -298,6 +322,7 @@ section {
     padding-inline: 198px;
 }
 .team__header {
+    font-family: ClashDisplay;
     font-size: 4rem;
     margin-bottom: 24px;
 }
@@ -330,11 +355,13 @@ section {
     align-items: center;
     text-align: center;
     font-size: 1.125rem;
+    font-weight: 400;
 }
 .team__swiper__card__position {
     font-weight: 600;
 }
 .team__swiper__card__name {
+    font-family: ClashDisplay;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -343,6 +370,7 @@ section {
     padding-bottom: 80px;
 }
 .events__header {
+    font-family: ClashDisplay;
     font-size: 4rem;
     margin-bottom: 80px;
     padding-left: 149px;
@@ -397,6 +425,7 @@ section {
     gap: 40px;
 }
 .footer__logo {
+    font-family: Elsie;
     font-size: 2rem;
 }
 .footer__form {
