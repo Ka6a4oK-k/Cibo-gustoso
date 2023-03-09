@@ -40,7 +40,8 @@ const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
 });
 
 const swiperMenuDrinkType = new Swiper('.menu__drinks__type__swiper', {
-    effect: "fade",
+    // effect: "fade",
+    // loop: true,
     slidesPerView: 1,
     navigation: {
         nextEl: '.menu__drinks__type__swiper-button-next',

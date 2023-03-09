@@ -225,6 +225,7 @@ section {
     width: calc(100% - 298px);
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
 }
 .menu__drinks__swiper {
     display: flex;
@@ -234,7 +235,10 @@ section {
 }
 .menu__drinks__swiper-wrapper {
     /* width: 50%; */
-    z-index: -1;
+    /* z-index: -1; */
+}
+.menu__drinks__swiper-slide {
+    display: flex;
 }
 .menu__drinks__swiper-pagination {
     display: flex;
@@ -254,7 +258,38 @@ section {
 .menu__drinks__swiper-pagination .swiper-pagination-bullet-active {
     color: rgba(54, 57, 45, 1);
 }
-
+.menu__drinks__type__swiper {
+    display: flex;
+}
+.menu__drinks__type__swiper-wrapper {
+    
+}
+.menu__drinks__type__swiper-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 45px;
+    margin-bottom: 110px;
+    align-self: flex-end;
+}
+.menu__drinks__type__swiper-slide__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.menu__drinks__type__swiper-slide__card__name {
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu__drinks__type__swiper-slide__card__price {
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu__drinks__type__swiper-slide__card__recipe {
+    font-size: 16px;
+    font-weight: 400;
+}
 /* team */
 .team__content {
     display: flex;
