@@ -125,6 +125,9 @@ section {
     font-size: 5rem;
 }
 /* about */
+.about {
+    padding-top: 160px;
+}
 .about__content {
     display: flex;
     justify-content: space-between;
@@ -172,6 +175,9 @@ section {
     background-color: rgba(207, 210, 198, 1);
 }
 /* menu */
+.menu {
+    padding-bottom: 80px;
+}
 .menu__inner {
     display: flex;
     flex-direction: column;
@@ -315,6 +321,10 @@ section {
     font-weight: 400;
 }
 /* team */
+.team {
+    background-color: rgba(183, 188, 169, 1);
+    padding-bottom: 80px;
+}
 .team__content {
     display: flex;
     justify-content: space-between;
@@ -330,7 +340,6 @@ section {
     width: 570px;
     font-size: 1.125rem;
     line-height: 1.8rem;
-    text-align: center;
 }
 .team__slider {
     width: 100%;
@@ -356,6 +365,7 @@ section {
     text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
+    background-color: rgba(183, 188, 169, 1);
 }
 .team__swiper__card__position {
     font-weight: 600;

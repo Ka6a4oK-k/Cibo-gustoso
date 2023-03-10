@@ -11,7 +11,5 @@ const checkPosition = () => {
 checkPosition()
 
 document.addEventListener('scroll', (e) => {
-    console.log(hero.scrollHeight);
-    console.log(window.scrollY);
     checkPosition()
 })

@@ -14,8 +14,6 @@ const swiperMenuDishes = new Swiper('.menu__dishes__swiper', {
     }
 });
 
-
-
 const swiperMenuDrinks = new Swiper('.menu__drinks__swiper', {
     effect: "fade",
     allowTouchMove: false,
@@ -30,7 +28,6 @@ const swiperMenuDrinks = new Swiper('.menu__drinks__swiper', {
 });
 
 const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
-    // loop: true,
     slidesPerView: 4,
     spaceBetween: 40,
     navigation: {
@@ -40,8 +37,6 @@ const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
 });
 
 const swiperMenuDrinkType = new Swiper('.menu__drinks__type__swiper', {
-    // effect: "fade",
-    // loop: true,
     spaceBetween: 10,
     slidesPerView: 1,
     navigation: {
