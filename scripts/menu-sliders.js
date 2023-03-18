@@ -36,7 +36,8 @@ const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
         prevEl: '.menu__dishes__type__swiper-button-prev',
     },
     breakpoints: {
-        1366: {
+        1280: {
+            slidesPerView: 4,
             spaceBetween: 40
         },
         480: {
