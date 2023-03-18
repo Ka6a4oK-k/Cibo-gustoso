@@ -22,7 +22,7 @@ a {
     color: inherit;
 }
 section {
-    padding-top: 80px;
+    padding-top: 6.5rem;
 }
 .container {
     margin: 0 auto;
@@ -32,9 +32,6 @@ section {
 }
 .swiper {
     overflow: hidden;
-}
-.swiper-wrapper {
-    margin-inline: -1;
 }
 /* header */
 
@@ -55,22 +52,22 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 .header__items {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .header__burger {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .header__burger span {
     display: block;
-    width: 32px;
+    width: 2rem;
     height: 3px;
     background-color: rgba(207, 210, 198, 1);
     border-radius: 2px;
@@ -99,7 +96,7 @@ section {
 }
 .header__nav__links {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .header__logo {
     font-family: Elsie;
@@ -123,14 +120,14 @@ section {
     color: rgba(207, 210, 198, 1);
     line-height: 6rem;
     font-size: 5rem;
+    text-shadow: 0 0 10px black;
 }
 /* about */
-.about {
-    padding-top: 160px;
-}
 .about__content {
     display: flex;
     justify-content: space-between;
+    width: 83%;
+    margin: 0 auto 2rem;
 }
 .about__header {
     font-family: ClashDisplay;
@@ -139,23 +136,23 @@ section {
 .about__text {
     font-size: 1.125rem;
     line-height: 1.6875rem;
-    width: 570px;
+    width: 40%;
 }
 .about__swiper {
     user-select: none;
-    max-width: 1920px;
+    max-width: 100%;
 }
 .about__swiper__buttons {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 24px;
-    margin-bottom: 40px;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 .swiper-button {
     position: static;
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 1px solid rgba(54, 57, 45, 1);
     margin: 0;
@@ -176,7 +173,7 @@ section {
 }
 /* menu */
 .menu {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 .menu__inner {
     display: flex;
@@ -186,14 +183,14 @@ section {
 .menu__header {
     font-family: ClashDisplay;
     font-size: 4rem;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .menu__text {
-    width: 570px;
+    width: 40%;
     font-size: 1.125rem;
     line-height: 1.8rem;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .menu__dishes-slider {
     width: 100%;
@@ -210,7 +207,7 @@ section {
     justify-content: center;
     align-items: center;
     position: static;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 .swiper-pagination-bullet {
     height: auto;
@@ -220,9 +217,9 @@ section {
     background-color: transparent;
 }
 .menu__dishes__swiper-pagination .swiper-pagination-bullet {
-    padding: 16px 40px;
+    padding: 1rem 2.5rem;
     border: 1px solid rgba(159, 166, 140, 1);
-    border-radius: 16px;
+    border-radius: 1rem;
     color: rgba(54, 57, 45, 1);
 }
 .menu__dishes__swiper-pagination .swiper-pagination-bullet-active {
@@ -240,16 +237,16 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 .menu__dishes__type__swiper-slide__card__name {
     font-family: ClashDisplay;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
 }
 .menu__dishes__type__swiper-slide__card__price {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 .menu__dishes__type__swiper {
@@ -260,7 +257,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 .menu__drinks__swiper {
     display: flex;
@@ -275,16 +272,15 @@ section {
     font-family: ClashDisplay;
     display: flex;
     flex-direction: column;
-    width: 570px !important;
+    width: 40% !important;
 }
 .menu__drinks__swiper-pagination .swiper-pagination-bullet {
-    height: auto;
     width: 100%;
-    padding: 40px 0;
+    padding: 2.5rem 0;
     border-radius: 0;
     color: rgba(159, 166, 140, 1);
     border-bottom: 1px solid rgba(159, 166, 140, 1);
-    font-size: 64px;
+    font-size: 4rem;
     transition: 0.3s;
 }
 .menu__drinks__swiper-pagination .swiper-pagination-bullet-active {
@@ -296,48 +292,50 @@ section {
 .menu__drinks__type__swiper-buttons {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-left: 40px;
-    margin-right: 45px;
-    margin-bottom: 110px;
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.8125rem;
+    margin-bottom: 6.875rem;
     align-self: flex-end;
 }
 .menu__drinks__type__swiper-slide__card {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 .menu__drinks__type__swiper-slide__card__name {
     font-family: ClashDisplay;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .menu__drinks__type__swiper-slide__card__price {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 .menu__drinks__type__swiper-slide__card__recipe {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 /* team */
 .team {
     background-color: rgba(183, 188, 169, 1);
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 .team__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-inline: 198px;
+    align-items: center;
+    /* padding-inline: 198px; */
+    width: 83%;
+    margin: 0 auto;
 }
 .team__header {
     font-family: ClashDisplay;
     font-size: 4rem;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .team__text {
-    width: 570px;
+    width: 40%;
     font-size: 1.125rem;
     line-height: 1.8rem;
 }
@@ -345,14 +343,16 @@ section {
     width: 100%;
 }
 .team__swiper {
-    max-width: calc(100% - 128px);
+    width: 93%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    margin-top: 2.5rem;
 }
 .team__swiper__buttons {
     display: flex;
-    gap: 24px;
-    margin-bottom: 40px;
+    gap: 1.5rem;
+    /* margin-bottom: 2.5rem; */
 }
 .team__swiper-wrapper {
     align-self: center;
@@ -360,7 +360,7 @@ section {
 .team__swiper__card {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     text-align: center;
     font-size: 1.125rem;
@@ -377,19 +377,19 @@ section {
 }
 /* events */
 .events {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 .events__header {
     font-family: ClashDisplay;
     font-size: 4rem;
-    margin-bottom: 80px;
-    padding-left: 149px;
+    margin-bottom: 5rem;
+    padding-left: 8.5%;
 }
 .events__items {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
 }
 .events__item {
     width: calc(50% - 12px);
@@ -406,7 +406,7 @@ section {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 32px;
+   font-size: 2rem;
    opacity: 0;
    transition: 0.4s;
 }
@@ -416,15 +416,15 @@ section {
 /* footer */ 
 .footer {
     font-size: 1.125rem;
-    padding-bottom: 80px;
-    padding-top: 72px;
+    padding-bottom: 3rem;
+    padding-top: 4.5rem;
     background-color: rgba(183, 188, 169, 1);
 }
 .footer__main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
 }
 .footer__nav {
     width: 33%;
@@ -432,7 +432,7 @@ section {
 .footer__nav__links {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .footer__logo {
     font-family: Elsie;
@@ -449,9 +449,9 @@ section {
     flex-direction: column;
 }
 .footer__form__title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 18.75px;
+    line-height: 1.171875rem;
 }
 .footer__form__input {
     padding: 16px 0 16px 8px;
@@ -464,10 +464,153 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 .footer__socials__link {
-    width: 40px;
-    height: 40px;
-    font-size: 34px;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 1439px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        padding-inline: 40px;
+    }
+    .menu__dishes-slider {
+        width: 100%;
+    }
+    .menu__drinks-slider {
+        width: calc(80%);
+    }
+    .menu__dishes__type__swiper {
+        width: calc(100% - 10rem);
+    }
+    .menu__drinks__type__swiper-buttons {
+        margin-left: 1.5rem;
+        margin-right: 1.8rem;
+    }
+}
+
+@media (max-width: 1279px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1023px) {
+    html {
+        font-size: 12px;
+    }
+    .about__content {
+        width: 95%;
+    }
+    .menu__text {
+        width: 60%;
+    }
+    .menu__dishes__type__swiper {
+        width: 100%;
+    }
+    .menu__drinks-slider {
+        width: 90%;
+    }
+    .menu__drinks__type__swiper {
+        width: 100%;
+    }
+    .about__swiper__buttons {
+        display: none;
+    }
+    .menu__dishes__swiper-button {
+        display: none;
+    }
+    .menu__drinks__type__swiper-buttons {
+        display: none;
+    }
+    .team__swiper {
+        width: 100%;
+    }
+    .team__swiper__buttons {
+        display: none;
+    }
+    .footer__main {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 11px;
+    }
+    .container {
+        padding-inline: 10px;
+    }
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__header {
+        margin-bottom: 1.5rem;
+    }
+    .about__text {
+        width: 60%;
+        text-align: center;
+    }
+    .menu__dishes__swiper-pagination {
+        flex-wrap: wrap;
+    }
+    .menu__dishes__swiper-pagination .swiper-pagination-bullet {
+        margin: 3px!important;
+    }
+    .menu__drinks-slider {
+        width: 100%;
+    }
+    
+    .menu__drinks__swiper-pagination .swiper-pagination-bullet {
+        font-size: 3rem!important;
+    }
+    .team__content {
+        flex-direction: column;
+    }
+    .team__text {
+        width: 60%;
+        text-align: center;
+    }
+    .footer {
+        padding-top: 2.5rem;
+    }
+    .footer__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__main > * {
+        width: auto;
+    }
+    .footer__logo {
+        margin-bottom: 2rem;
+    }
+    .footer__nav {
+        display: none;
+    }
+    .footer__form {
+        align-items: center;
+        width: 70%;
+    }
+}
+@media (max-width: 579px    ) {
+    html {
+        font-size: 10px;
+    }
+    .menu__drinks__swiper-pagination .swiper-pagination-bullet {
+        font-size: 2.5rem!important;
+    }
+    .menu__drinks__swiper-pagination {
+        width: 45%!important;
+    }
+}
+@media (max-width: 500px) {
+    .header__nav, .header__items__lang {
+        display: none;
+    }
 }

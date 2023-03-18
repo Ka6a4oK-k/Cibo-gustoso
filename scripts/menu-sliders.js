@@ -9,7 +9,7 @@ const swiperMenuDishes = new Swiper('.menu__dishes__swiper', {
         el: '.menu__dishes__swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (dishesList[index]) + "</span>";
+            return '<span class="' + className + ' .menu__dishes__swiper-pagination-bullet' +'">' + (dishesList[index]) + "</span>";
         }
     }
 });
@@ -28,11 +28,21 @@ const swiperMenuDrinks = new Swiper('.menu__drinks__swiper', {
 });
 
 const swiperMenuDishType = new Swiper('.menu__dishes__type__swiper', {
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // loop: true,
     navigation: {
         nextEl: '.menu__dishes__type__swiper-button-next',
         prevEl: '.menu__dishes__type__swiper-button-prev',
+    },
+    breakpoints: {
+        1366: {
+            spaceBetween: 40
+        },
+        480: {
+            spaceBetween: 20,
+            slidesPerView: 4,
+        }
     }
 });
 
