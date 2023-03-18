@@ -33,6 +33,10 @@ section {
 .swiper {
     overflow: hidden;
 }
+.lock-scroll {
+    overflow: hidden;
+}
+
 /* header */
 
 .header {
@@ -44,6 +48,9 @@ section {
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.4s;
+}
+.header > .container {
+    position: relative;
 }
 .scrolled {
     background-color: rgba(0, 0, 0, 0.6);
@@ -59,37 +66,34 @@ section {
     gap: 2.5rem;
 }
 .header__burger {
-    display: flex;
+    display: none;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 2.5rem;
     height: 2.5rem;
 }
 .header__burger span {
-    display: none;
+    display: block;
     width: 2rem;
     height: 3px;
     background-color: rgba(207, 210, 198, 1);
     border-radius: 2px;
+    transform-origin: 0% 50%;
+    transition: 0.4s;
 }
-.header__burger span::before {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
-    background-color: rgba(207, 210, 198, 1);
-    transform: translateY(-300%);    
+.header__burger-active span:nth-child(1) {
+    transform: rotate(45deg);
+    width: calc(2rem / 0.85090352453);
 }
-.header__burger span::after {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
-    background-color: rgba(207, 210, 198, 1);
-    transform: translateY(200%);    
+.header__burger-active span:nth-child(2) {
+    opacity: 0;
 }
+.header__burger-active span:nth-child(3) {
+    transform: rotate(-45deg);
+    width: calc(2rem / 0.85090352453);
+}
+
 .header__nav {
     display: flex;
     align-items: center;
@@ -102,6 +106,30 @@ section {
     font-family: Elsie;
     font-size: 2rem;
 }
+.header__mobile__menu {
+    height: 100vh;
+    width: 100%;
+    padding-top: 7rem;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: ClashDisplay;
+    transform: translateX(-100%);
+}
+.header__mobile__menu-active {
+    transform: translateX(0);
+}
+.header__mobile__menu__nav__links {
+    gap: 1.5rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* hero */
 .hero {
     width: 100%;
@@ -610,8 +638,8 @@ section {
     }
 }
 @media (max-width: 500px) {
-    .header__burger span {
-        display: block;
+    .header__burger {
+        display: flex;
     }
     .header__nav, .header__items__lang {
         display: none;
