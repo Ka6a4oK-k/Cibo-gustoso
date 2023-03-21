@@ -11,7 +11,7 @@
     src: url(../fonts/ClashDisplay/fonts/ClashDisplay-Bold.ttf);
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth!important;
 }
 body {
     font-family: Roboto;
